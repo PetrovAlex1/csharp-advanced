@@ -1,12 +1,23 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace _05.RecordUniqueNames
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			int n = int.Parse(Console.ReadLine());
+			var names = new HashSet<string>();
+
+			for (int i = 0; i < n; i++)
+			{
+				string inputName = Console.ReadLine();
+				names.Add(inputName);
+			}
+			foreach (var name in names)
+			{
+				Console.WriteLine(name);
+			}
 		}
 	}
 }
