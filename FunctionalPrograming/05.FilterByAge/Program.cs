@@ -6,12 +6,6 @@ namespace _05.FilterByAge
 {
 	class Program
 	{
-		public class Person
-		{
-			public string Name { get; set; }
-
-			public int Age { get; set; }
-		}
 		static void Main(string[] args)
 		{
 			int n = int.Parse(Console.ReadLine());
