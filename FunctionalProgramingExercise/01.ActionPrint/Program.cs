@@ -6,7 +6,9 @@ namespace _01.ActionPrint
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			var input = Console.ReadLine().Split();
+			Action<string[]> printSeparately = x => Console.WriteLine(string.Join(System.Environment.NewLine, x));
+			printSeparately(input);
 		}
 	}
 }
