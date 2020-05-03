@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Linq;
-using System.Collections.Generic;
 
-namespace _10.PredicateParty_
+namespace _02.CarExtension
 {
 	class Program
 	{
