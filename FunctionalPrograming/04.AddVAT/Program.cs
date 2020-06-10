@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace _04.AddVAT
 {
@@ -6,7 +7,18 @@ namespace _04.AddVAT
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+
+
+			var input = Console.ReadLine()
+				.Split(new[] { ",", " " }, StringSplitOptions.RemoveEmptyEntries)
+				.Select(double.Parse)
+				.Select(x => x * 1.2)
+				.ToArray();
+
+			foreach (var price in input)
+			{
+				Console.WriteLine($"{price:F2}");
+			}
 		}
 	}
 }
