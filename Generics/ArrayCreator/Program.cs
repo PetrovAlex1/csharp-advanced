@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace ArrayCreator
+namespace GenericArrayCreator
 {
-	class Program
+	public class StartUp
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			var strings = ArrayCreator<string>.Create(5, "Pesho");
+			var integers = ArrayCreator<int>.Create(10, 33);
 		}
 	}
 }
