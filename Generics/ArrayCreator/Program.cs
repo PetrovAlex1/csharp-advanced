@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _02.ArrayCreator
+namespace ArrayCreator
 {
 	class Program
 	{

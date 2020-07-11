@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _03.GenericScale
+namespace BoxOfT
 {
 	class Program
 	{
