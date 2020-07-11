@@ -2,7 +2,7 @@
 
 namespace _01.BoxOfT
 {
-	class Program
+	class StartUp
 	{
 		static void Main(string[] args)
 		{
